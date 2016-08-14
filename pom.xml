@@ -44,4 +44,15 @@
 			</plugin>
 		</plugins>
 	</build>
+	<distributionManagement>
+		<repository>
+			<id>bintray-ipfs-maven</id>
+			<name>ipfs-maven</name>
+			<url>https://api.bintray.com/maven/ipfs/maven/${name}/;publish=1</url>
+		</repository>
+		<snapshotRepository>
+			<id>jfrog-snapshots</id>
+			<url>http://oss.jfrog.org/artifactory/oss-snapshot-local</url>
+		</snapshotRepository>
+	</distributionManagement>
 </project>
